@@ -1,0 +1,66 @@
+.content-section {
+    height: 100%;
+    position: relative;
+}
+
+.content-section .card {
+    /* width: 80%;
+    height: 60%; */
+    /* background-color: red; */
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* bottom: 20%;
+    right: 10%; */
+    /* margin: -25px 0 0 -25px; apply negative top and left margins to truly center the element */
+}
+
+.card-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+#card-img-id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#skills {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+}
+
+#skills li:before {
+    content: "\f0eb"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+
+@media screen and (max-width: 1000px) {
+    #card-img-id .card-img {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #card-img-id .card-img {
+        display: none;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    #skills li {
+        font-size: 0.8rem;
+    }
+}

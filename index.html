@@ -6,14 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/landing-image.css">
+    <link rel="stylesheet" href="css/social-bar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <title>Thamolwan P.</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-target="#sidebarScroll" data-offset="1">
+    <!-- The sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <img src="img/avatar.jpeg" alt="Avatar" class="avatar">
+            </div>
+        </div>
+        <ul class="nav nav-pills flex-column" id="sidebarScroll">
+            <li class="nav-item"><a class="nav-link active" href="#home"><i class="bi bi-house-door-fill"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutme"><i class="bi bi-person-fill"></i> About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education"><i class="bi bi-book-fill"></i> Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work"><i class="bi bi-laptop-fill"></i> Work</a></li>
+        </ul> 
+    </nav>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="emailModalLabel"><i class="bi bi-envelope-fill"></i> Get In Touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            You can contact me via E-mail: thamolwan.po@hotmail.com
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+
+        <!-- Landing image -->
+        <div class="hero-image" id="home">
+            <div class="hero-text">
+                <h1 id="name">THAMOLWAN POOPRADUBSIL</h1>
+                <p>Programmer | Developer | Researcher | Student</p>
+                <button type="button" class="btn btn-success"><i class="bi bi-cloud-arrow-down-fill"></i> DOWNLOAD MY RESUME</button>
+            </div>
+            <div class="arrow bounce">
+                <p style="color: white;">Scroll Down</p>
+                <p id="arrow" class="fa fa-arrow-down fa-2x"></p>
+            </div>
+        </div>
+
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a href="https://www.instagram.com/ploymel/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/ploymel" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" data-toggle="modal" data-target="#emailModal" class="mail"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/thamolwan-poopradubsil" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/ploymel" class="github" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+
+        <!-- About Me Section-->
+        <div id="aboutme" class="content-section" data-aos="fade-left">    
+            <div class="card bg-success text-white w-75">
+                <div class="row no-gutters">
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h3 class="card-title">ABOUT ME...</h3>
+                            <p class="card-text">
+                                Hello! My name is Thamolwan Poopradubsil. I am an energetic and enthusiastic person. I enjoy learning new stuffs especially things about technology. My journey as a computer science student started back in 2012 when I learned how to code in my junior high school. It was very difficult for an me but at last, I was one of a few students who was able to complete all of the exercises without any helps!!
+                            </p>
+                            <p class="card-text">
+                                I just finished my master's degree on computer science and I am currently looking for job opportunities especially in the field of <strong style="color: yellow;">DATA ENGINEERING</strong> or <strong style="color: yellow;">DATA SCIENTIST</strong>. Although, I haven't had any working experiences but I am willy and eagerly to learn.
+                            </p>
+                            <p class="card-text">
+                                Here are a few technologies I've been working with recently:
+                            </p>
+                            <ul id="skills">
+                                <li>Python</li>
+                                <li>Pytorch</li>
+                                <li>Tensorflow</li>
+                                <li>Java</li>
+                                <li>Vue</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="card-img-id">
+                        <img src="img/profile.gif" class="card-img" alt="Profile">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="education" class="bg-warning" style="height: 1000px"> 
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>  -->
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
