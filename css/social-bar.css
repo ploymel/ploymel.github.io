@@ -53,12 +53,12 @@
         position: fixed;
         flex-direction: row !important;
         top: 5%;
-        right: 0;
+        left: 0;
         width: 100%;
         z-index: 9;
     }
 
     .icon-bar a {
-        float: right;
+        float: left;
     }
 }
