@@ -85,3 +85,9 @@ p#arrow {
 @media (min-width: 1200px) {
     .hero-text #name { font-size: 6rem; }
 }
+
+@media screen and (max-height: 350px) {
+    .arrow { 
+        display: none;
+    }
+}

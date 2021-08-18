@@ -46,12 +46,20 @@
 
 @media screen and (max-width: 1000px) {
     #card-img-id .card-img {
-        width: 300px;
-        height: 350px;
+        width: 200px;
+        height: 250px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    #skills li {
+        font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #card-img-id .card-img {
         display: none;
     }
@@ -62,5 +70,13 @@
 
     #skills li {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .content-section .card {
+        position: absolute;
+        top: 100%;
+        transform: translate(-50%, -50%);
     }
 }
