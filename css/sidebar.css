@@ -19,14 +19,14 @@
   
 /* Active/current link */
 .sidebar a.active {
-    background-color: #04AA6D !important; 
+    background-color: #325D41 !important; 
     color: white;
     border-radius: 0;
 }
   
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-    background-color: #555;
+    background-color: #677865;
     color: white;
     border-radius: 0;
 }

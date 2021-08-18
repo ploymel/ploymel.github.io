@@ -41,17 +41,27 @@
         <ul class="nav nav-pills flex-column" id="sidebarScroll">
             <li class="nav-item"><a class="nav-link active" href="#home"><i class="bi bi-house-door-fill"></i> Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#aboutme"><i class="bi bi-person-fill"></i> About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education"><i class="bi bi-book-fill"></i> Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education"><i class="bi bi-book-fill"></i> Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#work"><i class="bi bi-laptop-fill"></i> Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery"><i class="bi bi-image-fill"></i> Gallery</a></li>
         </ul> 
     </nav>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.instagram.com/ploymel/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/ploymel" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" data-toggle="modal" data-target="#emailModal" class="mail"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/thamolwan-poopradubsil" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/ploymel" class="github" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="emailModalLabel"><i class="bi bi-envelope-fill"></i>Get In Touch</h5>
+            <h5 class="modal-title" id="emailModalLabel"><i class="bi bi-envelope-fill"></i> Get In Touch</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -74,30 +84,21 @@
             <div class="hero-text">
                 <h1 id="name">THAMOLWAN POOPRADUBSIL</h1>
                 <p>Programmer | Developer | Researcher | Student</p>
-                <button type="button" class="btn btn-success"><i class="bi bi-cloud-arrow-down-fill"></i> DOWNLOAD MY RESUME</button>
+                <button type="button" class="btn" id="downloadBtn"><i class="bi bi-cloud-arrow-down-fill"></i> DOWNLOAD MY RESUME</button>
             </div>
             <div class="arrow bounce">
-                <p style="color: white;">Scroll Down</p>
+                <p style="color: white;" id="pscroll">Scroll Down</p>
                 <p id="arrow" class="fa fa-arrow-down fa-2x"></p>
             </div>
         </div>
 
-        <!-- The social media icon bar -->
-        <div class="icon-bar">
-            <a href="https://www.instagram.com/ploymel/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/ploymel" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="#" data-toggle="modal" data-target="#emailModal" class="mail"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/thamolwan-poopradubsil" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/ploymel" class="github" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
-
         <!-- About Me Section-->
-        <div id="aboutme" class="content-section" data-aos="fade-down">    
-            <div class="card bg-success text-white w-75">
+        <div id="aboutme" class="content-section" data-aos="fade-right">    
+            <div class="card text-white w-75">
                 <div class="row no-gutters">
                     <div class="col-lg-8">
                         <div class="card-body">
-                            <h3 class="card-title">ABOUT ME...</h3>
+                            <h3 class="card-title">About Me...</h3>
                             <p class="card-text">
                                 Hello! My name is Thamolwan Poopradubsil. I am an energetic and enthusiastic person. I enjoy learning new stuffs especially things about technology. My journey as a computer science student started back in 2012 when I learned how to code in my junior high school. It was very difficult for me but guess what I was one of a few students who was able to complete all of the exercises without any helps!!
                             </p>
@@ -123,10 +124,47 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="education" class="bg-warning" style="height: 1000px"> 
-            <h1>Section 2</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-        </div>  -->
+
+        <!-- Education Section -->
+        <div id="education" class="content-section" data-aos="fade-right">
+            <div class="card text-white w-75">
+                <div class="card-body">
+                    <h3 class="card-title">Where my journey begins...</h3>
+                    <div id="edutab">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-link active" id="nav-master-tab" data-toggle="tab" href="#nav-master" role="tab" aria-controls="nav-master" aria-selected="true">MSc.</a>
+                          <a class="nav-link" id="nav-bachelor-tab" data-toggle="tab" href="#nav-bachelor" role="tab" aria-controls="nav-bachelor" aria-selected="false">BSc.</a>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active mt-4" id="nav-master" role="tabpanel" aria-labelledby="nav-master-tab">
+                            <div class="tab-title">
+                                <h5><span>Master of Science</span> @ NCU, Taiwan &#x1F1F9;&#x1F1FC;</h5>
+                                <p>September 2019 - June 2021</p>
+                            </div>
+                            <ul class="tab-ul">
+                                <li>The receiver of 2019 Taiwan MOE Scholarship.</li>
+                                <li>Member of WIDM (Web Intelligence and Data Mining) laboratory under the guidance of Professor Chia-Hui Chang.</li>
+                                <li>Member of NCU badminton club and participated in National Intercollegiate Athletic Games 2020 and 2021.</li>
+                                <li><strong style="text-decoration: underline;">Research Area:</strong> Aspect-based Sentiment Classification and Dialogue System (Chatbot).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade mt-4" id="nav-bachelor" role="tabpanel" aria-labelledby="nav-bachelor-tab">
+                            <div class="tab-title">
+                                <h5><span>Bachelor of Science</span> @ KU, Thailand &#x1F1F9;&#x1F1ED;</h5>
+                                <p>August 2015 - May 2019</p>
+                            </div>
+                            <ul class="tab-ul">
+                                <li>The receiver of King Bhumibol Academic Excellence Awards (KU) given to top 5 who achieved the highest score from each college.</li>
+                                <li>Member of KU badminton club and participated in National Intercollegiate Athletic Games 2016, 2017 and 2018.</li>
+                                <li>President of KU Computer Science Student Association (2018).</li>
+                                <li><strong style="text-decoration: underline;">Research Work:</strong> Autonomous car with the use of Deep Learning technique (Imitation Learning).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
     </div>
 
     <script>

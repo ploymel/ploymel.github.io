@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap');
+
 body, html {
     height: 100%;
 }
@@ -49,6 +51,16 @@ p#arrow {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
+}
+
+#downloadBtn {
+    background-color: #325D41; 
+    color: white;
+}
+
+#downloadBtn:hover {
+    background-color: #677865;
+    color: white;
 }
 
 @keyframes bounce {

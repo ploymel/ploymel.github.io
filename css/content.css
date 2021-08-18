@@ -12,6 +12,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #325D41;
     /* bottom: 20%;
     right: 10%; */
     /* margin: -25px 0 0 -25px; apply negative top and left margins to truly center the element */
@@ -44,6 +45,52 @@
     width: 1.3em; /* same as padding-left set on li */
 }
 
+#education .tab-ul {
+    list-style: none;
+}
+
+#education .tab-ul li:before {
+    content: "\f101"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+    color: yellow;
+}
+
+#edutab #nav-tab .nav-link {
+    color: white;
+}
+
+#edutab #nav-tab .nav-link.active {
+    color: black;
+}
+
+#edutab #nav-tab .nav-link:hover:not(.active) {
+    background-color: #677865;
+    border: none !important;
+}
+
+.tab-title {
+    font-family: 'Fira Code', monospace;
+}
+
+.tab-title span {
+    color: yellow;
+}
+
+.tab-title p {
+    /* color: #677865; */
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1000px) {
+    #education.content-section .card {
+        height: 450px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     #card-img-id .card-img {
         width: 200px;
@@ -55,6 +102,22 @@
     }
 
     #skills li {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .tab-title {
+        font-size: 0.9rem;
+    }
+
+    .tab-ul {
+        font-size: 0.9rem;
+    }
+
+    #nav-tab {
         font-size: 0.9rem;
     }
 }
@@ -69,6 +132,18 @@
     }
 
     #skills li {
+        font-size: 0.8rem;
+    }
+
+    .tab-title {
+        font-size: 0.8rem;
+    }
+
+    .tab-ul {
+        font-size: 0.8rem;
+    }
+
+    #nav-tab {
         font-size: 0.8rem;
     }
 }
